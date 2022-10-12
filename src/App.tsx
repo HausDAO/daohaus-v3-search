@@ -1,14 +1,10 @@
-import { ParMd, H2, SingleColumnLayout, Footer } from '@daohaus/ui';
+import { SingleColumnLayout, Footer, H1 } from '@daohaus/ui';
 
 function App() {
   return (
     <div>
       <SingleColumnLayout>
-        <>
-          {/* <DaoHausNav /> */}
-          <H2>Sub Heading</H2>
-          <ParMd>Testing this out</ParMd>
-        </>
+        <H1>This is your app</H1>
       </SingleColumnLayout>
       <Footer />
     </div>
