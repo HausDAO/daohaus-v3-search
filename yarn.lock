@@ -270,10 +270,8 @@
     react-hook-form "^7.33.1"
     tslib "^2.0.0"
 
-"@daohaus/common-utilities@0.0.12", "@daohaus/common-utilities@^0.0.12":
+"@daohaus/common-utilities@0.0.12", "@daohaus/common-utilities@file:../../daohaus-monorepo/dist/libs/common-utilities":
   version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@daohaus/common-utilities/-/common-utilities-0.0.12.tgz#551ba4a1c2376f2425b867cc4e72348cfe609fa5"
-  integrity sha512-kmrK4TUPQzXCB/vIfttE2oQe7C1s0Jsl1sZVTN+jAlme9gJxX6j1pH2oav0D+YN9NkgHidi2emCItpmeylMOdQ==
   dependencies:
     date-fns "^2.28.0"
     ethers "^5.6.5"
@@ -312,7 +310,17 @@
     react-hook-form "^7.33.1"
     tslib "^2.0.0"
 
-"@daohaus/ui@file:../daohaus-monorepo/dist/libs/ui":
+"@daohaus/haus-form-builder@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@daohaus/haus-form-builder/-/haus-form-builder-0.0.1.tgz#3f38485b2d75bb77fcb672218df77f2e3f0e8cd9"
+  integrity sha512-5Qx6XlzQ9M+ejaayXd4NcbwIGf/b0PyRTCWf1rEv7oex7EiEUl1AKadu9GpEDA1a/3g+eJWaxySyUyTKZyHffQ==
+
+"@daohaus/tx-builder-feature@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@daohaus/tx-builder-feature/-/tx-builder-feature-0.0.12.tgz#8f51399d231d8e686b3fcb01272241d36e6164ae"
+  integrity sha512-4Uk1TbtydcNZbavKqQSrh7hAeFOHtsAXuSnPoMQT4v0/5YEieIDIK6Y9LbW3uqnl7B0KQK4kBdoJ1mRzrVqyCA==
+
+"@daohaus/ui@file:../../daohaus-monorepo/dist/libs/ui":
   version "0.0.18"
 
 "@emotion/is-prop-valid@^1.1.0":
@@ -763,6 +771,11 @@
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.7.3.tgz#939534757a81f8d69cc854c7692805684ff3111e"
   integrity sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==
+
+"@types/deep-eql@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/deep-eql/-/deep-eql-4.0.0.tgz#168e28540d077f443090fce6926ff3b5bbaec757"
+  integrity sha512-UkfTYLA64vGUyR4ez8ybIC01wtilS/ydOqKL1fSHOvnX1sVm1sI5btr7Q+bqpdaPGD+QNhOgBXq1HGjO+99e1A==
 
 "@types/hoist-non-react-statics@*":
   version "3.3.1"

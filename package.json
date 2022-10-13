@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@daohaus/abi-utilities": "^0.0.2",
-    "@daohaus/common-utilities": "^0.0.12",
+    "@daohaus/common-utilities": "file: ./../../../daohaus-monorepo/dist/libs/common-utilities",
     "@daohaus/contract-utilities": "^0.0.2",
     "@daohaus/dao-data": "^0.0.13",
-    "@daohaus/ui": "file: ../../../daohaus-monorepo/dist/libs/ui",
+    "@daohaus/haus-form-builder": "^0.0.1",
+    "@daohaus/tx-builder-feature": "^0.0.12",
+    "@daohaus/ui": "file: ./../../../daohaus-monorepo/dist/libs/ui",
     "deep-eql": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,6 +23,7 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@types/deep-eql": "^4.0.0",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
