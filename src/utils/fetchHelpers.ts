@@ -42,14 +42,7 @@ export const loadDaoList = async ({
     if (shouldUpdate) {
       setNextPaging(res.nextPaging);
 
-      setData((prevState) => {
-        if (deepEqual(prevState, res.items)) return res.items;
-        if (prevState) {
-          return [...prevState, ...res.items];
-        } else {
-          return res.items;
-        }
-      });
+      setData(res.items);
     }
   } catch (error) {
     console.error(error);

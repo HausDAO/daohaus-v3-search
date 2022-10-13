@@ -90,7 +90,6 @@ export const SearchContextProvider = ({
   const [daoNextPaging, setDaoNextPaging] = useState<Paging | undefined>();
 
   useEffect(() => {
-    console.log('searchTerm', searchTerm, chainId);
     let shouldUpdate = true;
     if (searchTerm && chainId) {
       setLoading(true);
@@ -107,6 +106,8 @@ export const SearchContextProvider = ({
         setNextPaging: setDaoNextPaging,
         shouldUpdate,
       });
+    } else {
+      setResults([]);
     }
 
     return () => {

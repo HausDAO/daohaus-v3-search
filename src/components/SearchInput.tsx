@@ -2,7 +2,6 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { Field, Input } from '@daohaus/ui';
 import useDebounce from '../utils/debounceHook';
-import { Noun } from '@daohaus/common-utilities';
 
 type SearchInputProps = {
   searchTerm?: string;
@@ -35,7 +34,7 @@ const SearchInput = ({
   return (
     <Input
       icon={BiSearch}
-      full
+      long
       id="dao-search"
       placeholder="Search DAOs"
       onChange={handleSearchTermChange}
