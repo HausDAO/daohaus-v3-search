@@ -7,7 +7,7 @@ import {
   SetStateAction,
   useContext,
 } from 'react';
-import { Keychain, ValidNetwork } from '@daohaus/common-utilities';
+import { ValidNetwork } from '@daohaus/common-utilities';
 import {
   Dao_Filter,
   Dao_OrderBy,
