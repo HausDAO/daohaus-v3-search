@@ -9,10 +9,8 @@ import {
 } from 'react';
 import { Keychain, ValidNetwork } from '@daohaus/common-utilities';
 import {
-  DaoWithTokenDataQuery,
   Dao_Filter,
   Dao_OrderBy,
-  Haus,
   ITransformedDaoListQuery,
   Ordering,
   Paging,
