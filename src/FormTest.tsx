@@ -2,7 +2,7 @@
 // import { CustomFields } from '../legos/config';
 // import { TABULA_FORMS } from '../legos/form';
 
-import { FormBuilder } from '@daohaus/form-builder';
+import { FormBuilder } from '@daohaus/haus-form-builder';
 import { useTxBuilder } from '@daohaus/tx-builder-feature';
 import { Button } from '@daohaus/ui';
 import { LOCAL_ABI } from '@daohaus/abi-utilities';

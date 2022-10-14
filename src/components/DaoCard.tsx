@@ -102,13 +102,13 @@ export const DaoCard = ({
         {shareTokenSymbol && (
           <ParMd>
             <Bold>{toWholeUnits(totalShares)}</Bold>{' '}
-            {/* <Bold>
+            <Bold>
               {formatValueTo({
                 value: fromWei(totalShares),
                 decimals: 2,
                 format: 'numberShort',
               })}
-            </Bold> */}
+            </Bold>
             {`${charLimit(shareTokenSymbol, 20)} tokens in circulation`}
           </ParMd>
         )}
