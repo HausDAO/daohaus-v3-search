@@ -34,9 +34,9 @@ const Search = () => {
   const { searchTerm, setSearchTerm, chainId, isLoading, results } =
     useSearch();
 
-  const { state, dispatch } = useContext(DaoSearchContext);
+  // const { state, dispatch } = useContext(DaoSearchContext);
 
-  console.log('results', state);
+  // console.log('results', state);
 
   return (
     <SearchContainer>

@@ -1,6 +1,7 @@
+import { ValidNetwork } from '@daohaus/common-utilities';
 import { DataXs, ParXs } from '@daohaus/ui';
-import { useState } from 'react';
 import styled from 'styled-components';
+import { useSearch } from '../contexts/SearchContext';
 
 const RadioGroup = styled.div`
   display: flex;
@@ -29,10 +30,10 @@ const radios = [
 ];
 
 const NetworkToggle = () => {
-  const [network, setNetwork] = useState('0x64');
+  const { chainId, setChainId } = useSearch();
 
   const updateNetwork = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setNetwork(e.target.value);
+    setChainId(e.target.value as ValidNetwork);
   };
   return (
     <RadioGroup>
@@ -44,7 +45,7 @@ const NetworkToggle = () => {
               type="radio"
               id={radio.id}
               value={radio.value}
-              checked={network === radio.value}
+              checked={chainId === radio.value}
               onChange={updateNetwork}
             />
             <DataXs>{radio.label}</DataXs>
