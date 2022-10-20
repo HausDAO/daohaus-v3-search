@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-import {
-  Footer,
-  H1,
-  MainLayout,
-  OuterLayout,
-  SingleColumnLayout,
-} from '@daohaus/ui';
+import { Footer, MainLayout } from '@daohaus/ui';
 import { SearchContextProvider } from './contexts/SearchContext';
 import Search from './components/Search';
 
 import HausImg from './assets/haus__avatar.png';
+import { DaoSearchProvider } from './contexts/DaoSearchContext';
+import { ConnectButton } from '@daohaus/daohaus-connect-feature';
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -20,15 +16,18 @@ const ContentWrapper = styled.div`
 
 function App() {
   return (
-    <SearchContextProvider>
-      <MainLayout>
-        <ContentWrapper>
-          <img width="200px" src={HausImg} />
-          <Search />
-        </ContentWrapper>
-      </MainLayout>
-      <Footer />
-    </SearchContextProvider>
+    <DaoSearchProvider>
+      <SearchContextProvider>
+        <MainLayout>
+          <ConnectButton isSm />
+          <ContentWrapper>
+            <img width="200px" src={HausImg} />
+            <Search />
+          </ContentWrapper>
+        </MainLayout>
+        <Footer />
+      </SearchContextProvider>
+    </DaoSearchProvider>
   );
 }
 

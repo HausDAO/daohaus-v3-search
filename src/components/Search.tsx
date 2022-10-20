@@ -1,6 +1,15 @@
 import { ValidNetwork } from '@daohaus/common-utilities';
-import { breakpoints, Spinner } from '@daohaus/ui';
+import {
+  breakpoints,
+  Button,
+  Link,
+  Spinner,
+  WrappedCheckbox,
+  WrappedInput,
+} from '@daohaus/ui';
+import { useContext } from 'react';
 import styled from 'styled-components';
+import { DaoSearchContext } from '../contexts/DaoSearchContext';
 import { useSearch } from '../contexts/SearchContext';
 import { DaoList } from './DaoList';
 import SearchInput from './SearchInput';
@@ -24,7 +33,9 @@ const Search = () => {
   const { searchTerm, setSearchTerm, chainId, isLoading, results } =
     useSearch();
 
-  console.log('results', results);
+  const { state, dispatch } = useContext(DaoSearchContext);
+
+  console.log('results', state);
 
   return (
     <SearchContainer>
