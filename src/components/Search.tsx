@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import { DaoSearchContext } from '../contexts/DaoSearchContext';
 import { useSearch } from '../contexts/SearchContext';
 import { DaoList } from './DaoList';
+import NetworkToggle from './NetworkToggle';
 import SearchInput from './SearchInput';
 
 const SearchContainer = styled.div`
@@ -39,6 +40,7 @@ const Search = () => {
 
   return (
     <SearchContainer>
+      <NetworkToggle />
       <InputContainer>
         <SearchInput setSearchTerm={setSearchTerm} searchTerm={searchTerm} />
       </InputContainer>
