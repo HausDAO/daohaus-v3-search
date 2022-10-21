@@ -52,7 +52,7 @@ export const defaultDaoData = {
 };
 
 export type SearchContextType = {
-  chainId: ValidNetwork | null;
+  chainId: ValidNetwork | null | undefined;
   setChainId: Dispatch<SetStateAction<ValidNetwork | null | undefined>>;
   results: ITransformedDaoListQuery['daos'] | null | undefined;
   isLoading: boolean;
@@ -83,7 +83,7 @@ export const SearchContextProvider = ({
   >();
   const [isLoading, setLoading] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string | undefined>();
-  const [chainId, setChainId] = useState<ValidNetwork | null>(
+  const [chainId, setChainId] = useState<ValidNetwork | null | undefined>(
     '0x64' as ValidNetwork
   );
   const [daoFilter, setDaoFilter] = useState<Dao_Filter | undefined>();
