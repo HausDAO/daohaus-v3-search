@@ -83,7 +83,9 @@ export const SearchContextProvider = ({
   >();
   const [isLoading, setLoading] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string | undefined>();
-  const [chainId, setChainId] = useState<ValidNetwork | null>('0x5');
+  const [chainId, setChainId] = useState<ValidNetwork | null>(
+    '0x64' as ValidNetwork
+  );
   const [daoFilter, setDaoFilter] = useState<Dao_Filter | undefined>();
   const [daoSort, setDaoSort] = useState<Ordering<Dao_OrderBy> | undefined>();
   const [daoPaging, setDaoPaging] = useState<Paging | undefined>(
