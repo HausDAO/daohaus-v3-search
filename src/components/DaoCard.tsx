@@ -9,7 +9,7 @@ import {
   toBaseUnits,
   toWholeUnits,
 } from '@daohaus/common-utilities';
-import { ITransformedDao, ITransformedMembership } from '@daohaus/dao-data';
+import { ITransformedDao } from '@daohaus/dao-data';
 import {
   Badge,
   Bold,

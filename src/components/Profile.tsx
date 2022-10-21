@@ -1,14 +1,7 @@
 import { truncateAddress } from '@daohaus/common-utilities';
-import { Button, DataSm, DataXs, Tooltip } from '@daohaus/ui';
+import { Button, DataXs, Tooltip } from '@daohaus/ui';
 import styled from 'styled-components';
-import {
-  useAccount,
-  useConnect,
-  useDisconnect,
-  useEnsAvatar,
-  useEnsName,
-  useNetwork,
-} from 'wagmi';
+import { useAccount, useConnect, useDisconnect, useNetwork } from 'wagmi';
 import { InjectedConnector } from 'wagmi/connectors/injected';
 
 const AddressIndicator = styled.div`

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { Button, Footer, MainLayout } from '@daohaus/ui';
+import { Footer, MainLayout } from '@daohaus/ui';
 import { SearchContextProvider } from './contexts/SearchContext';
 import Search from './components/Search';
 
 import HausImg from './assets/haus__avatar.png';
 import { DaoSearchProvider } from './contexts/DaoSearchContext';
-import Profile from './components/Profile';
-import NetworkToggle from './components/NetworkToggle';
+// import Profile from './components/Profile';
+// import NetworkToggle from './components/NetworkToggle';
 
 const ContentWrapper = styled.div`
   display: flex;
