@@ -121,7 +121,7 @@ export const DaoCard = ({
         secondary
         fullWidth
         centerAlign
-        href={`https://admin.daohaus.fun/molochv3/${chainId}/${id}`}
+        href={`https://admin.daohaus.fun/#/molochv3/${chainId}/${id}`}
         linkType="external"
         target="_blank"
         rel="noreferrer"

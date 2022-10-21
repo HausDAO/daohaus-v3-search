@@ -21,6 +21,9 @@ const DEFAULT_DAO_PAGE_SIZE = 25;
 
 export const defaultDaoData = {
   chainId: '0x5' as ValidNetwork,
+  setChainId: async () => {
+    return;
+  },
   results: null,
   isLoading: false,
   searchTerm: undefined,
@@ -50,6 +53,7 @@ export const defaultDaoData = {
 
 export type SearchContextType = {
   chainId: ValidNetwork | null;
+  setChainId: Dispatch<SetStateAction<ValidNetwork | null | undefined>>;
   results: ITransformedDaoListQuery['daos'] | null | undefined;
   isLoading: boolean;
   searchTerm: string | undefined;
@@ -132,6 +136,7 @@ export const SearchContextProvider = ({
         results,
         isLoading,
         chainId,
+        setChainId,
         searchTerm,
         setSearchTerm,
         resetResults,
@@ -155,6 +160,7 @@ export const useSearch = (): SearchContextType => {
     results,
     isLoading,
     chainId,
+    setChainId,
     searchTerm,
     setSearchTerm,
     resetResults,
@@ -171,6 +177,7 @@ export const useSearch = (): SearchContextType => {
     results,
     isLoading,
     chainId,
+    setChainId,
     searchTerm,
     setSearchTerm,
     resetResults,

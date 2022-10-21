@@ -1,5 +1,3 @@
-import deepEqual from 'deep-eql';
-
 import { ReactSetter, ValidNetwork } from '@daohaus/common-utilities';
 import {
   Dao_Filter,
