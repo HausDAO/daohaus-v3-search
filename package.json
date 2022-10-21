@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@daohaus/abi-utilities": "^0.0.2",
-    "@daohaus/common-utilities": "^0.0.12",
-    "@daohaus/contract-utilities": "^0.0.2",
-    "@daohaus/dao-data": "^0.0.13",
+    "@daohaus/abi-utilities": "^0.0.3",
+    "@daohaus/common-utilities": "^0.0.13",
+    "@daohaus/contract-utilities": "^0.0.3",
+    "@daohaus/dao-data": "^0.0.14",
     "@daohaus/ui": "^0.0.19",
     "ethers": "^5.7.2",
     "react": "^18.2.0",

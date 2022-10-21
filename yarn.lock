@@ -299,63 +299,52 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@daohaus/abi-utilities@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@daohaus/abi-utilities/-/abi-utilities-0.0.2.tgz#a7c6c166a116f4ef4a074c172aa8d7bdc3327846"
-  integrity sha512-ZOKhSdfuXKq1bpwjOQnZ1D19EqMegCtmDLi8O48yoVY4ncwUy/Zkwz8C+ZiMQ/7+cZ3P8m3dZnVA56H7nWKjsA==
+"@daohaus/abi-utilities@0.0.3", "@daohaus/abi-utilities@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@daohaus/abi-utilities/-/abi-utilities-0.0.3.tgz#6f79c610c8bda31b562b663bf984552259d42441"
+  integrity sha512-RYSZKizO1MJPt0W4hs+9rDMQpG+MOFNFWgIENQBE4yKlT5kCXKtB7Yx7OytwrGHKPEob8UZo2JLcigufMZzJuA==
 
-"@daohaus/baal-contracts@^0.3.3":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@daohaus/baal-contracts/-/baal-contracts-0.3.5.tgz#9b353ac53643fc13a05edc7708c9005ce12c3fc2"
-  integrity sha512-3BWvV3Pu0GeXQ0JIVTyfI5a/aX6Q8VpeWdOTA3SUM8pNA2uYnAiVnceHCD34Kz6lMrUlEx+xAjyYJvKOXz2umw==
+"@daohaus/baal-contracts@^0.4.0":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@daohaus/baal-contracts/-/baal-contracts-0.4.1.tgz#96e770b53997d2d9e392ec6603238acbe2c2c0e2"
+  integrity sha512-GgSF1oqy2EsDewzf6jAFKYBkvXUnfWikkclpcx48WSRNhfAmORXX63bmohAOfxmOWszhdbSckUwDSuJ3xvcwBw==
   dependencies:
     "@gnosis.pm/zodiac" "^1.0.3"
     hardhat-contract-sizer "^2.4.0"
 
-"@daohaus/common-utilities@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@daohaus/common-utilities/-/common-utilities-0.0.11.tgz#777dd81318e1080bc7dd8fcbef325d70d7da8263"
-  integrity sha512-i/RbJ3dwX38K4kulSbPgNjDMmCjpxSLR2kIfmfYXecdWavDo4IAr6WAGu8R32YnHSBUBMFN1aAtrr5C8lm8Npg==
-  dependencies:
-    date-fns "^2.28.0"
-    ethers "^5.6.5"
-    numbro "^2.3.6"
-    react "^18.2.0"
-    react-hook-form "^7.33.1"
-    tslib "^2.0.0"
-
-"@daohaus/common-utilities@0.0.12", "@daohaus/common-utilities@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@daohaus/common-utilities/-/common-utilities-0.0.12.tgz#551ba4a1c2376f2425b867cc4e72348cfe609fa5"
-  integrity sha512-kmrK4TUPQzXCB/vIfttE2oQe7C1s0Jsl1sZVTN+jAlme9gJxX6j1pH2oav0D+YN9NkgHidi2emCItpmeylMOdQ==
-  dependencies:
-    date-fns "^2.28.0"
-    ethers "^5.6.5"
-    numbro "^2.3.6"
-    react "^18.2.0"
-    react-hook-form "^7.33.1"
-    tslib "^2.0.0"
-
-"@daohaus/contract-utilities@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@daohaus/contract-utilities/-/contract-utilities-0.0.2.tgz#e675451a174383cf97fe6e0bbf18d789fa11350c"
-  integrity sha512-K+1EGyQr+hS9cODuXLuHcZyUpYxI3I5fXsYUR4SlOg+D6gCBdtK8sxEdUeZxq03nPnH6OWfwGMkDA6uk4xqypw==
-  dependencies:
-    "@daohaus/baal-contracts" "^0.3.3"
-    "@daohaus/common-utilities" "0.0.11"
-    date-fns "^2.28.0"
-    ethers "^5.6.5"
-    numbro "^2.3.6"
-    react "^18.2.0"
-    react-hook-form "^7.33.1"
-    tslib "^2.0.0"
-
-"@daohaus/dao-data@^0.0.13":
+"@daohaus/common-utilities@0.0.13", "@daohaus/common-utilities@^0.0.13":
   version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@daohaus/dao-data/-/dao-data-0.0.13.tgz#bb9f7972c60a546197a212cf382f6dfa056f5e23"
-  integrity sha512-HuIx9cEiPn5mQpfkHIWCXaprn9e2zIks8zViufKfAbK0j7B8oPJOZwB3cqEgplM4VV48/ppQf9BWyMYlzmwbNg==
+  resolved "https://registry.yarnpkg.com/@daohaus/common-utilities/-/common-utilities-0.0.13.tgz#611342fe683e447a154c522dcac76d36a190a809"
+  integrity sha512-bs2UL/lV1VB040x9GhwCjZ8uZWKKw3HhoDW1LqTxrby44RELVvwJnzcdbgSSZwJ1yd8hJ0hN3HmHDXoDkElO9g==
   dependencies:
-    "@daohaus/common-utilities" "0.0.12"
+    date-fns "^2.28.0"
+    ethers "^5.6.5"
+    numbro "^2.3.6"
+    react "^18.2.0"
+    react-hook-form "^7.33.1"
+    tslib "^2.0.0"
+
+"@daohaus/contract-utilities@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@daohaus/contract-utilities/-/contract-utilities-0.0.3.tgz#6a9193700d639b2784c59f431eb8e211adb9ff0e"
+  integrity sha512-A6D4qEhWF9iV7LS7YrtygSEwQ4Qrs89wfkgdzA8AgD5bxBhBHcHoHROzqAMp3YRPH5AZ4ntIqxvKYHDDkJVTDg==
+  dependencies:
+    "@daohaus/abi-utilities" "0.0.3"
+    "@daohaus/baal-contracts" "^0.4.0"
+    "@daohaus/common-utilities" "0.0.13"
+    date-fns "^2.28.0"
+    ethers "^5.6.5"
+    numbro "^2.3.6"
+    react "^18.2.0"
+    react-hook-form "^7.33.1"
+    tslib "^2.0.0"
+
+"@daohaus/dao-data@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@daohaus/dao-data/-/dao-data-0.0.14.tgz#9d24d24ea13919e30ddac7e4125eba3bd4fb0de1"
+  integrity sha512-gaiuNVqaeVDC7Yhw3KzYir88PCDSxzizHfHNcsH76DFNEIquIszu/2MJKpHTJsxEgcHcdgP9K9NbAd26/QLbKw==
+  dependencies:
+    "@daohaus/common-utilities" "0.0.13"
     cross-fetch "^3.1.5"
     date-fns "^2.28.0"
     ethers "^5.6.5"
