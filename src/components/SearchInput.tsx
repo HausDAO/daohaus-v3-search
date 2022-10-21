@@ -21,7 +21,6 @@ const SearchInput = ({
     if (localSearchTerm !== searchTerm) {
       setSearchTerm(localSearchTerm);
     }
-    // TODO: I don't want to fire on these others!!
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm]);
 

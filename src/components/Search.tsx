@@ -1,8 +1,8 @@
-import { ValidNetwork } from '@daohaus/common-utilities';
 import { breakpoints, Spinner } from '@daohaus/ui';
 import styled from 'styled-components';
 import { useSearch } from '../contexts/SearchContext';
 import { DaoList } from './DaoList';
+import NetworkToggle from './NetworkToggle';
 import SearchInput from './SearchInput';
 
 const SearchContainer = styled.div`
@@ -24,10 +24,9 @@ const Search = () => {
   const { searchTerm, setSearchTerm, chainId, isLoading, results } =
     useSearch();
 
-  console.log('results', results);
-
   return (
     <SearchContainer>
+      <NetworkToggle />
       <InputContainer>
         <SearchInput setSearchTerm={setSearchTerm} searchTerm={searchTerm} />
       </InputContainer>

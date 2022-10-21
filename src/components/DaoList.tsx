@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { breakpoints } from '@daohaus/ui';
-import { ITransformedDao, ITransformedMembership } from '@daohaus/dao-data';
+import { ITransformedDao } from '@daohaus/dao-data';
 import { DaoCard } from './DaoCard';
 import { ValidNetwork } from '@daohaus/common-utilities';
 

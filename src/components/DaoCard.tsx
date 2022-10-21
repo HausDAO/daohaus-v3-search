@@ -9,7 +9,7 @@ import {
   toBaseUnits,
   toWholeUnits,
 } from '@daohaus/common-utilities';
-import { ITransformedDao, ITransformedMembership } from '@daohaus/dao-data';
+import { ITransformedDao } from '@daohaus/dao-data';
 import {
   Badge,
   Bold,
@@ -121,7 +121,7 @@ export const DaoCard = ({
         secondary
         fullWidth
         centerAlign
-        href={`https://admin.daohaus.fun/molochv3/${chainId}/${id}`}
+        href={`https://admin.daohaus.fun/#/molochv3/${chainId}/${id}`}
         linkType="external"
         target="_blank"
         rel="noreferrer"

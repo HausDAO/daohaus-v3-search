@@ -21,6 +21,9 @@ const DEFAULT_DAO_PAGE_SIZE = 25;
 
 export const defaultDaoData = {
   chainId: '0x5' as ValidNetwork,
+  setChainId: async () => {
+    return;
+  },
   results: null,
   isLoading: false,
   searchTerm: undefined,
@@ -49,7 +52,8 @@ export const defaultDaoData = {
 };
 
 export type SearchContextType = {
-  chainId: ValidNetwork | null;
+  chainId: ValidNetwork | null | undefined;
+  setChainId: Dispatch<SetStateAction<ValidNetwork | null | undefined>>;
   results: ITransformedDaoListQuery['daos'] | null | undefined;
   isLoading: boolean;
   searchTerm: string | undefined;
@@ -79,7 +83,9 @@ export const SearchContextProvider = ({
   >();
   const [isLoading, setLoading] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string | undefined>();
-  const [chainId, setChainId] = useState<ValidNetwork | null>('0x5');
+  const [chainId, setChainId] = useState<ValidNetwork | null | undefined>(
+    '0x64' as ValidNetwork
+  );
   const [daoFilter, setDaoFilter] = useState<Dao_Filter | undefined>();
   const [daoSort, setDaoSort] = useState<Ordering<Dao_OrderBy> | undefined>();
   const [daoPaging, setDaoPaging] = useState<Paging | undefined>(
@@ -132,6 +138,7 @@ export const SearchContextProvider = ({
         results,
         isLoading,
         chainId,
+        setChainId,
         searchTerm,
         setSearchTerm,
         resetResults,
@@ -155,6 +162,7 @@ export const useSearch = (): SearchContextType => {
     results,
     isLoading,
     chainId,
+    setChainId,
     searchTerm,
     setSearchTerm,
     resetResults,
@@ -171,6 +179,7 @@ export const useSearch = (): SearchContextType => {
     results,
     isLoading,
     chainId,
+    setChainId,
     searchTerm,
     setSearchTerm,
     resetResults,
